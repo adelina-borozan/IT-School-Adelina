@@ -1,15 +1,18 @@
+package feature2;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class GoogleTest2 {
+public class GoogleTest {
+
     WebDriver driver;
 
-    @BeforeClass
-    public void setup(){
+    @BeforeMethod
+    public void setUp(){
         driver = new ChromeDriver();
         driver.get("https://www.google.com");
     }
@@ -24,13 +27,13 @@ public class GoogleTest2 {
 
     @Test
     public void searchWikipedia() {
-        driver.navigate().back();
+        driver.findElement(By.xpath("//*[text()='Acceptă tot']")).click();
 
         driver.findElement(By.name("q")).sendKeys("Wikipedia");
         driver.findElement(By.name("q")).submit();
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }
