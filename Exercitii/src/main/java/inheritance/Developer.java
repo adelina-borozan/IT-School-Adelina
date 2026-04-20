@@ -6,6 +6,7 @@ public class Developer extends Employee {
         super(name);
     }
 
+    @Override
     public void work(String aplicatie) {
         System.out.println(name + " develoeaza " + aplicatie + ".");
     }
