@@ -25,4 +25,8 @@ public class HomePage {
         }
         driver.findElement(this.logoutButton).click();
     }
+
+    public void goToCart() {
+        driver.findElement(cartButton).click();
+    }
 }

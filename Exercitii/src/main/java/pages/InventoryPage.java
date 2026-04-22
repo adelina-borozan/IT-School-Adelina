@@ -28,4 +28,14 @@ public class InventoryPage {
         String xpath = "//div[text()='" + productName +"']/ancestor::div[@class='inventory_item']//button[text()='Add to cart']";
         driver.findElement(By.xpath(xpath)).click();
     }
+
+    public boolean isProductDisplayed(String productName) {
+        String xpath = "//div[text()='" + productName + "']";
+        return driver.findElement(By.xpath(xpath)).isDisplayed();
+    }
+
+    public void clickOnProduct(String productName) {
+        String xpath = "//div[text()='" + productName + "']";
+        driver.findElement(By.xpath(xpath)).click();
+    }
 }
