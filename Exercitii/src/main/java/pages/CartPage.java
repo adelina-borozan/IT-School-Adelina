@@ -18,6 +18,7 @@ public class CartPage {
 
     public boolean isProductInCart(String productName) {
         List<WebElement> items = driver.findElements(itemName);
+        System.out.println("items" + items);
 
         for (int i = 0; i < items.size(); i++) {
             String text = items.get(i).getText();
