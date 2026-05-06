@@ -78,5 +78,7 @@ public class Demoqa {
 
         Assert.assertTrue(classAttribute.contains("field-error"));
 
+        //acesta este un comentariu
+
     }
 }
