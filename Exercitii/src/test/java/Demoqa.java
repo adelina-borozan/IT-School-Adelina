@@ -75,6 +75,7 @@ public class Demoqa {
         String classAttribute = email.getAttribute("class");
 
         System.out.println(classAttribute);
+        //comentariu la linia 78
 
         Assert.assertTrue(classAttribute.contains("field-error"));
 
