@@ -38,7 +38,6 @@ public class Person {
         p1.displayInfo();
         p2.displayInfo();
         p3.displayInfo();
-        p4.displayInfo();
 
 
         // test branch
