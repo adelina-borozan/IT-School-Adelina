@@ -24,6 +24,7 @@ public class Person {
         Person p1 = new Person("Gratiela", 28);
 
         p1.name = "Anabella";
+
         p1.age = 38;
 
         Person p2 = new Person("Horatiu", 25);
@@ -37,6 +38,8 @@ public class Person {
         p1.displayInfo();
         p2.displayInfo();
         p3.displayInfo();
-        p4.displayInfo();
+
+
+        // test branch
     }
 }
